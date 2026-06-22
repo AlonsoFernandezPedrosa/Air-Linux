@@ -57,7 +57,7 @@ Habrá 2 usuarios: "*admin*" (es admin y no root porque el nombre root puede dar
 
 
 ### Tareas
-- [ ] Tener v0.0.1 (Arranque y script básico)
+- [x] Tener v0.0.1 (Arranque y script básico)
 - [ ] Logo
 - [ ] Texto Ascii (Neofetch personalizado)
 - [ ] Añadir más programas
