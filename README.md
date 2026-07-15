@@ -4,7 +4,7 @@
 
 ### Que es Air Linux
 
-Air Linux es una distribución basada en Fedora orientada al ámbito educativo. Busca ser simple y dar acercamiento al software libre en las escuelas, cuenta con todos los programas necesarios, con el escritorio KDE para mejor usabilidad y cuenta con una version en XFCE para ordenadores modestos.
+Air Linux es un script escrito completamente en bash que convierte Fedora KDE/XFCE en una distro ambientada para el entorno educativo con todas las herramientas y programas necesarios. NO es una distribución completa, es una conversión.
 
 ### Por que se llama Air Linux
 
