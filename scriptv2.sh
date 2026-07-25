@@ -1,3 +1,4 @@
+#!/bin/bash
 # Definir colores
 
 ROJON='\033[1;31m'
@@ -8,30 +9,55 @@ NC='\033[0m'
 ROJO='\033[0;31m'
 
 # Inicio
+sleep 0.5
+echo "
+   ███    ████ ████████
+  ██ ██    ██  ██     ██
+ ██   ██   ██  ██     ██
+██     ██  ██  ████████
+█████████  ██  ██   ██
+██     ██  ██  ██    ██
+██     ██ ████ ██     ██
+
+██████   ██████  ████████  ████ ████████  ████████
+██    ██ ██    ██ ██     ██  ██  ██     ██    ██
+██       ██       ██     ██  ██  ██     ██    ██
+ ██████  ██       ████████   ██  ████████     ██
+      ██ ██       ██   ██    ██  ██           ██
+██    ██ ██    ██ ██    ██   ██  ██           ██
+ ██████   ██████  ██     ██ ████ ██           ██
+
+"
+
+sleep 0.2
 echo -e "${AZUL}-----------------------------------"
 echo -e "${AZUL}|Bienvenido al script de Air Linux|"
 echo -e "${AZUL}-----------------------------------"
 
 # Explicacion y DISCLAIMER
+sleep 0.2
 echo -e "${VERDE}A continuación se van a realizar una serie de procesos para convertir Fedora en Air Linux"
+sleep 0.2
 
 echo -e "${ROJON}DISCLAIMER: ${ROJO}Air Linux es un proyecto educativo que no está vinculado con Fedora, todas las herramientas de la distribución están disponibles en el repositorio de GitHub: github.com"
 
 
 #Actualizacion
+sleep 0.2
+
 echo -e "${VERDE}Actualizando... Se le pedirá contraseña root${NC}"
 
 sudo dnf upgrade -y && sudo dnf update -y
 
-
+#Instalacion
 echo -e "${VERDE}Actualizado, ahora se procederá a la instalación de los programas${NC}"
 sleep 3
 
+sudo dnf copr enable imput/helium -y
+
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
-sudo dnf install -y  flameshot openshot gimp krita stellarium pidgin
-
-URL_LAST_RPM=$(curl -s https://api.github.com/repos/veyon/veyon/releases/latest | grep "browser_download_url" | grep "fedora" | cut -d '"' -f 4) && wget -q "$URL_LAST_RPM" && sudo dnf localinstall -y veyon-*.rpm && sudo rm veyon-*.rpm
+sudo dnf install -y  flameshot openshot gimp krita stellarium pidgin fastfetch jd helium-bin
 
 sudo tee -a /etc/yum.repos.d/vscodium.repo << 'EOF'
 [gitlab.com_paulcarroty_vscodium_repo]
@@ -48,42 +74,41 @@ sudo dnf install -y codium
 
 flatpak install flathub org.geogebra.GeoGebra -y
 flatpak install flathub com.nextcloud.desktopclient.nextcloud -y
+flatpak install flathub ai.lmstudio.lm-studio -y
 
-# Instalacion de AppImages
-## LMSTUDIO
-mkdir -p "$HOME/.local/bin"
 
-wget "https://lmstudio.ai/download/latest/linux/x64" -O "$HOME/.local/bin/LMStudio.appimage"
+# Personalización
 
-chmod +x "$HOME/.local/bin/LMStudio.appimage"
+ ## Fastfetch
 
-mkdir -p "$HOME/.local/share/applications"
+ fastfetch --gen-config-force
+ wget -O "$HOME/.config/fastfetch/asciicustom.txt" https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/Ascii-Fastfetch.txt
 
-cat << EOF > "$HOME/.local/share/applications/LMStudio.desktop"
-[Desktop Entry]
-Type=Application
-Name=LMStudio
-Comment=Ejecute IA en local
-Exec=$HOME/.local/bin/LMStudio.appimage
-Icon=system-run
-Terminal=false
-Categories=Utility;
-EOF
+ if grep fastfetch ~/.bashrc; then
+    :
 
-## Helium
-curl https://api.github.com/repos/imputnet/helium/releases/latest | grep '"browser_download_url":' | grep '.appimage' -o "$HOME/.local/bin/Helium.appimage"
+ else
+    echo "fastfetch --file-raw $HOME/.config/fastfetch/asciicustom.txt" >> ~/.bashrc
 
-chmod +x "$HOME/.local/bin/Helium.appimage"
+ fi
 
-mkdir -p "$HOME/.local/share/applications"
+ ## Tema Claro/Oscuro
 
-cat << EOF > "$HOME/.local/share/applications/Helium.desktop"
-[Desktop Entry]
-Type=Application
-Name=Helium
-Comment=Navegador Chromium con uBlock Origin instalado
-Exec=$HOME/.local/bin/Helium.appimage
-Icon=system-run
-Terminal=false
-Categories=Utility;
-EOF
+ read -p "Indique que tema quiere escoger (White o Dark) y respete las mayúsculas: " theme
+ if  [ "$theme" = "White" ]
+ then
+   lookandfeeltool -a org.kde.breeze.desktop
+   sudo rm /usr/share/icons/hicolor/scalable/places/start-here.svg
+   sudo wget -O /usr/share/icons/hicolor/scalable/places/start-here.svg https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/refs/heads/master/icono-dark.svg
+
+ elif  [ "$theme" = "Dark" ]
+ then
+   lookandfeeltool -a org.kde.breezedark.desktop
+   sudo rm /usr/share/icons/hicolor/scalable/places/start-here.svg
+   sudo wget -O /usr/share/icons/hicolor/scalable/places/start-here.svg https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/refs/heads/master/icono-white.svg
+
+ else
+   echo -e "${ROJON}No es una opción válida, vuelva a intentarlo"
+
+ fi
+
