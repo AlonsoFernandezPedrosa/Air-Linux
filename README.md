@@ -4,7 +4,7 @@
 
 ### Que es Air Linux
 
-Air Linux es un script escrito completamente en bash que convierte Fedora KDE/XFCE en una distro ambientada para el entorno educativo con todas las herramientas y programas necesarios. NO es una distribución completa, es una conversión.
+Air Linux es un script hecho en bash para Fedora con el objetivo de convertirla en una distribución educativa. El script cuenta con todas las herramientas y todo automatizado para poder hacerlo en múltiples ordenadores sin dificultad ninguna.
 
 ### Por que se llama Air Linux
 
@@ -12,11 +12,11 @@ Este proyecto nace de una idea de ser minimalista pero lo suficientemente comple
 
 ### Para quien es Air Linux
 
-Todas las escuelas, padres o academias que necesiten una distribucion de Linux en la que sus hijos/alumnos/niños esten seguros y controlados. Cuenta con todo el material educativo necesario y todas las herramientas de aprendizaje en el estudio moderno.
+Todas las escuelas o academias que necesiten una distribucion de Linux en la que sus alumnos/niños esten seguros y controlados. Cuenta con todo el material educativo necesario y todas las herramientas de aprendizaje en el estudio moderno.
 
 ### Por qué KDE y XFCE
 
-Estos han sido los escritorios elegidos por una razón. KDE es una combinacion de minimalista + rico en funciones. Tiene todo lo que puedas necesitar, y en equipos con unas caracteristicas decentes rinde genial. XFCE fue elegido para ser ejecutado en ordenadores modestos o microordenadores como RaspberryPi, no es lo mejor esteticamente pero no es el objetivo.
+Estos han sido los escritorios elegidos por una razón. KDE es una combinacion de minimalista + rico en funciones. Tiene todo lo que puedas necesitar, y en equipos con unas caracteristicas decentes rinde genial. XFCE fue elegido para ser ejecutado en ordenadores modestos o microordenadores como RaspberryPi, no es lo mejor estéticamente pero no es el objetivo.
 
 ### Que hace a Air Linux diferente a Fedora KDE normal
 
@@ -36,15 +36,16 @@ Air Linux busca ser una distribucion diferente pero teniendo una base solida. El
 - Geogebra: Software matemático y geometrico potente
 - Stellarium: Planetario
 - Pidgin: Chat entre profesores y alumnos
-- Nextcloud: Si el centro cuenta con un servidor hay documentos colaborativos en la nube 
+- Nextcloud: Si el centro cuenta con un servidor hay documentos colaborativos en la nube
+- Fastfetch personalizado en el arranque de la termianl
 
 Todo esto se instalaría en el script del que se habla a continuación
 
 ### post-install.sh
 
-Este script cuenta con la actualización total del sistema, instalación de los programas anteriormente mencionados, y se procederia a la creacion de los usuarios y restriccion de los comandos/aplicaciones y el resto de funciones necesarias para una escuela. Incluye tambien el cambio de logotipo, animaciones y fondo de pantalla.
+El script cuenta con la actualización del sistema y la instalación de los programas. Despues personaliza el sistema con un tema propio basado en Breeze (tanto Dark como White) y otros detalles. Crea los usuarios y restringe las funciones necesarias.
 
-Este script debería ejecutarse nada mas acabar la instalacion de Fedora KDE/XFCE y despues debera eliminarse del ordenador correspondiente. El script estará siempre disponible en el repositorio de GitHub.
+El script debe ser ejecutado al terminar la instalación de Fedora KDE/XFCE y despues deberá ser eliminado del sistema.
 
 
 ### Gestor de arranque
@@ -55,11 +56,4 @@ Se usara rEFInd como gestor de arranque alternativo al tradicional GRUB, con un 
 
 Habrá 2 usuarios: "*admin*" (es admin y no root porque el nombre root puede dar problemas) y "*user*". El primero tendrá una contraseña puesta por el centro la cual el alumno no debe saber. El segundo será el usuario del alumno/a, el que usará. No deberá tener permisos de ningun tipo y no se pedirá la contraseña al encender el ordenador (salvo que el centro así prefiera) y la contraseña en caso de que haga falta deberá ser igual al nombre de usuario.
 
-
-### Tareas
-- [x] Tener v0.0.1 (Arranque y script básico)
-- [ ] Logo
-- [x] Texto Ascii (Neofetch personalizado)
-- [ ] Añadir más programas
-- [ ] Tener versión XFCE
-
+v1.1.0
