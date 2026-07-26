@@ -120,6 +120,9 @@ flatpak install flathub ai.lmstudio.lm-studio -y
    sudo wget -O /usr/share/icons/hicolor/22x22/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/22/icono-white.png
    sudo wget -O /usr/share/icons/hicolor/16x16/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/16/icono-white.png
 
+   wget -O "$HOME/default_dark.png" https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/refs/heads/master/assets/default_dark.png
+   plasma-apply-wallpaperimage $HOME/default_dark.png
+
  elif  [ "$theme" = "White" ]
  then
    lookandfeeltool -a org.kde.breeze.desktop
@@ -144,6 +147,11 @@ flatpak install flathub ai.lmstudio.lm-studio -y
    sudo wget -O /usr/share/icons/hicolor/24x24/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/24/icono-dark.png
    sudo wget -O /usr/share/icons/hicolor/22x22/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/22/icono-dark.png
    sudo wget -O /usr/share/icons/hicolor/16x16/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/16/icono-dark.png
+
+   wget -O "$HOME/default_white.png" https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/refs/heads/master/assets/default_white.png
+   plasma-apply-wallpaperimage $HOME/default_white.png
+
+
 
  else
    echo -e "${ROJON}No es una opción válida, vuelva a intentarlo"
