@@ -97,7 +97,7 @@ flatpak install flathub ai.lmstudio.lm-studio -y
  read -p "Indique que tema quiere escoger (White o Dark) y respete las mayúsculas: " theme
  if  [ "$theme" = "White" ]
  then
-   sudo -u $SUDO_USER lookandfeeltool -a org.kde.breeze.desktop
+   lookandfeeltool -a org.kde.breeze.desktop
    sudo rm /usr/share/icons/hicolor/scalable/apps/start-here.svg
    sudo rm /usr/share/icons/hicolor/scalable/places/start-here.svg
    sudo rm /usr/share/icons/hicolor/256x256/places/start-here.png
@@ -122,7 +122,7 @@ flatpak install flathub ai.lmstudio.lm-studio -y
 
  elif  [ "$theme" = "Dark" ]
  then
-   sudo -u $SUDO_USER lookandfeeltool -a org.kde.breezedark.desktop
+   lookandfeeltool -a org.kde.breezedark.desktop
    sudo rm /usr/share/icons/hicolor/scalable/apps/start-here.svg
    sudo rm /usr/share/icons/hicolor/scalable/places/start-here.svg
    sudo rm /usr/share/icons/hicolor/256x256/places/start-here.png
