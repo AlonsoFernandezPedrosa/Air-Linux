@@ -122,6 +122,7 @@ flatpak install flathub ai.lmstudio.lm-studio -y
 
    wget -O "$HOME/default_dark.png" https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/refs/heads/master/assets/default_dark.png
    plasma-apply-wallpaperimage $HOME/default_dark.png
+   sudo wget -O /usr/share/plasma/look-and-feel/org.kde.breeze.desktop/contents/splash/images/plasma.svgz https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/refs/heads/master/assets/plasma.svgz
 
  elif  [ "$theme" = "White" ]
  then
@@ -150,6 +151,7 @@ flatpak install flathub ai.lmstudio.lm-studio -y
 
    wget -O "$HOME/default_white.png" https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/refs/heads/master/assets/default_white.png
    plasma-apply-wallpaperimage $HOME/default_white.png
+   sudo wget -O /usr/share/plasma/look-and-feel/org.kde.breeze.desktop/contents/splash/images/plasma.svgz https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/refs/heads/master/assets/plasma.svgz
 
 
 
