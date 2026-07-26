@@ -55,7 +55,7 @@ sleep 3
 
 sudo dnf copr enable imput/helium -y
 
-flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 sudo dnf install -y  flameshot openshot gimp krita stellarium pidgin fastfetch jd helium-bin
 
@@ -98,14 +98,14 @@ flatpak install flathub ai.lmstudio.lm-studio -y
  if  [ "$theme" = "White" ]
  then
    lookandfeeltool -a org.kde.breeze.desktop
-   sudo rm /usr/share/icons/hicolor/scalable/places/start-here.svg
-   sudo wget -O /usr/share/icons/hicolor/scalable/places/start-here.svg https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/refs/heads/master/icono-dark.svg
+   sudo rm /usr/share/icons/hicolor/scalable/apps/start-here.svg
+   sudo wget -O /usr/share/icons/hicolor/scalable/apps/start-here.svg https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/refs/heads/master/icono-dark.svg
 
  elif  [ "$theme" = "Dark" ]
  then
    lookandfeeltool -a org.kde.breezedark.desktop
-   sudo rm /usr/share/icons/hicolor/scalable/places/start-here.svg
-   sudo wget -O /usr/share/icons/hicolor/scalable/places/start-here.svg https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/refs/heads/master/icono-white.svg
+   sudo rm /usr/share/icons/hicolor/scalable/apps/start-here.svg
+   sudo wget -O /usr/share/icons/hicolor/scalable/apps/start-here.svg https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/refs/heads/master/icono-white.svg
 
  else
    echo -e "${ROJON}No es una opción válida, vuelva a intentarlo"
