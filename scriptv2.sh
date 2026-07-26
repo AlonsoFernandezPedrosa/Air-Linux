@@ -109,16 +109,16 @@ flatpak install flathub ai.lmstudio.lm-studio -y
    sudo rm /usr/share/icons/hicolor/22x22/places/start-here.png
    sudo rm /usr/share/icons/hicolor/16x16/places/start-here.png
 
-   wget -O /usr/share/icons/hicolor/scalable/apps/start-here.svg https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/refs/heads/master/assets/icono-white.svg
-   wget -O /usr/share/icons/hicolor/scalable/places/start-here.svg https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/refs/heads/master/assets/icono-white.svg
-   wget -O /usr/share/icons/hicolor/256x256/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/2256/icono-white.png
-   wget -O /usr/share/icons/hicolor/96x96/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/96/icono-white.png
-   wget -O /usr/share/icons/hicolor/48x48/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/48/icono-white.png
-   wget -O /usr/share/icons/hicolor/36x36/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/36/icono-white.png
-   wget -O /usr/share/icons/hicolor/32x32/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/32/icono-white.png
-   wget -O /usr/share/icons/hicolor/24x24/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/24/icono-white.png
-   wget -O /usr/share/icons/hicolor/22x22/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/22/icono-white.png
-   wget -O /usr/share/icons/hicolor/16x16/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/16/icono-white.png
+   sudo wget -O /usr/share/icons/hicolor/scalable/apps/start-here.svg https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/refs/heads/master/assets/icono-white.svg
+   sudo wget -O /usr/share/icons/hicolor/scalable/places/start-here.svg https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/refs/heads/master/assets/icono-white.svg
+   sudo wget -O /usr/share/icons/hicolor/256x256/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/2256/icono-white.png
+   sudo wget -O /usr/share/icons/hicolor/96x96/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/96/icono-white.png
+   sudo wget -O /usr/share/icons/hicolor/48x48/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/48/icono-white.png
+   sudo wget -O /usr/share/icons/hicolor/36x36/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/36/icono-white.png
+   sudo wget -O /usr/share/icons/hicolor/32x32/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/32/icono-white.png
+   sudo wget -O /usr/share/icons/hicolor/24x24/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/24/icono-white.png
+   sudo wget -O /usr/share/icons/hicolor/22x22/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/22/icono-white.png
+   sudo wget -O /usr/share/icons/hicolor/16x16/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/16/icono-white.png
 
  elif  [ "$theme" = "Dark" ]
  then
@@ -134,20 +134,16 @@ flatpak install flathub ai.lmstudio.lm-studio -y
    sudo rm /usr/share/icons/hicolor/22x22/places/start-here.png
    sudo rm /usr/share/icons/hicolor/16x16/places/start-here.png
 
-   wget -O /usr/share/icons/hicolor/scalable/apps/start-here.svg https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/refs/heads/master/assets/icono-dark.svg
-   wget -O /usr/share/icons/hicolor/scalable/places/start-here.svg https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/refs/heads/master/assets/icono-dark.svg
-   wget -O /usr/share/icons/hicolor/256x256/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/2256/icono-dark.png
-   wget -O /usr/share/icons/hicolor/96x96/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/96/icono-dark.png
-   wget -O /usr/share/icons/hicolor/48x48/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/48/icono-dark.png
-   wget -O /usr/share/icons/hicolor/36x36/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/36/icono-dark.png
-   wget -O /usr/share/icons/hicolor/32x32/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/32/icono-dark.png
-   wget -O /usr/share/icons/hicolor/24x24/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/24/icono-dark.png
-   wget -O /usr/share/icons/hicolor/22x22/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/22/icono-dark.png
-   wget -O /usr/share/icons/hicolor/16x16/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/16/icono-dark.png
-
-
-
-   sudo wget -O /usr/share/icons/hicolor/scalable/apps/start-here.svg https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/refs/heads/master/icono-white.svg
+   sudo wget -O /usr/share/icons/hicolor/scalable/apps/start-here.svg https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/refs/heads/master/assets/icono-dark.svg
+   sudo wget -O /usr/share/icons/hicolor/scalable/places/start-here.svg https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/refs/heads/master/assets/icono-dark.svg
+   sudo wget -O /usr/share/icons/hicolor/256x256/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/2256/icono-dark.png
+   sudo wget -O /usr/share/icons/hicolor/96x96/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/96/icono-dark.png
+   sudo wget -O /usr/share/icons/hicolor/48x48/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/48/icono-dark.png
+   sudo wget -O /usr/share/icons/hicolor/36x36/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/36/icono-dark.png
+   sudo wget -O /usr/share/icons/hicolor/32x32/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/32/icono-dark.png
+   sudo wget -O /usr/share/icons/hicolor/24x24/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/24/icono-dark.png
+   sudo wget -O /usr/share/icons/hicolor/22x22/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/22/icono-dark.png
+   sudo wget -O /usr/share/icons/hicolor/16x16/places/start-here.png https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/assets/16/icono-dark.png
 
  else
    echo -e "${ROJON}No es una opción válida, vuelva a intentarlo"
