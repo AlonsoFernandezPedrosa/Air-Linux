@@ -1,4 +1,4 @@
-![Eduacation made easy.jpg](assets/Eduacation made easy.jpg)
+<img width="1856" height="619" alt="Eduacation made easy" src="https://github.com/user-attachments/assets/e3c77a9c-7b8e-46cc-85cf-7d4123f9f52c" />
 
 ___
 
@@ -46,17 +46,21 @@ Las ideas son originales y el código también. El README no está asistido por 
 
 Lo único en lo que la IA ha colaborado profundamente es en el logo, no cuento con un buen nivel de diseño de logotipos, es por eso que Gemini con un prompt escrito por un humano hizo este logo:
 
-![Gemini_Generated_Image_xt7l1yxt7l1yxt7l.png](../../../../Descargas/Gemini_Generated_Image_xt7l1yxt7l1yxt7l.png "Gemini_Generated_Image_xt7l1yxt7l1yxt7l.png")
+<img width="1024" height="1024" alt="Gemini_Generated_Image_xt7l1yxt7l1yxt7l" src="https://github.com/user-attachments/assets/88f0e1cd-6462-472a-8088-1786c969298f" />
+
 
 del que a posteriori se hizo una simplificación hecha por mí, en Inkscape tomando de base ese.
-![Logo.svg](assets/Logo.svg)
+
+
+
+
 
 
 Por último, no soy hablante nativo de Inglés, soy español y mi nivel de inglés no es suficientemente alto como para escribir todo esto, la IA ha trabajado en la traducción de este README y en algunas partes más. El texto original en español está disponible en GitHub igualmente y se puede consultar.
 ___
 
 
-![a complete open source suite.jpg](assets/a complete open source suite.jpg)
+<img width="1856" height="629" alt="a complete open source suite" src="https://github.com/user-attachments/assets/1e921988-1509-4827-bb8e-ab477b4aca2a" />
 
 
 ### Conjunto de apps y programas con el que cuenta
@@ -78,7 +82,8 @@ ___
 
 Todo esto se instalaría en el script del que se habla a continuación
 ___ 
-![the script.jpg](assets/the script.jpg)
+<img width="1856" height="619" alt="the script" src="https://github.com/user-attachments/assets/6c70e9e6-1f1e-4b47-85a8-2e2efe81bb14" />
+
 
 
 ### post-install.sh
