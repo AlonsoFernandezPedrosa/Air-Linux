@@ -1,3 +1,7 @@
+
+<img width="1856" height="619" alt="Eduacation made easy" src="https://github.com/user-attachments/assets/fe18ff1c-ce8a-4119-9a1a-57f2aa97a794" />
+
+
 # Air Linux.md
 
 ## Conceptos clave
@@ -21,6 +25,9 @@ Estos han sido los escritorios elegidos por una razón. KDE es una combinacion d
 ### Que hace a Air Linux diferente a Fedora KDE normal
 
 Air Linux busca ser una distribucion diferente pero teniendo una base solida. El hecho de acercarse a los entornos educativos le refuerza debido a que cuenta con todas las herramientas y programas necesarios para ello.
+
+<img width="1856" height="629" alt="a complete open source suite" src="https://github.com/user-attachments/assets/af733b74-f9ee-4ec9-8909-5be4cee05d24" />
+
 
 ### Conjunto de apps y programas con el que cuenta
 
