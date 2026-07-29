@@ -1,4 +1,4 @@
-#!/bin/bash
+ #!/bin/bash
 # Definir colores
 
 ROJON='\033[1;31m'
@@ -70,7 +70,8 @@ gpgkey=https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg
 metadata_expire=1h
 EOF
 
-sudo dnf install -y codium
+sudo dnf install -y codiumndo se modifica un usuario ya existente.
+
 
 flatpak install flathub org.geogebra.GeoGebra -y
 flatpak install flathub com.nextcloud.desktopclient.nextcloud -y
@@ -79,11 +80,15 @@ flatpak install flathub ai.lmstudio.lm-studio -y
 
 # Personalización
 
- ## Fastfetch
+echo -e "${VERDE}Instalación completada, ahora se va a personalizar el sistema"
+sleep 2
+
+ ## Fastfetcho, le recomendamos utilizar lo mismo que en el nombre de usuario, que es ${AZUL}user${ROJO}."
 
  fastfetch --gen-config-force
  wget -O "$HOME/.config/fastfetch/asciicustom.txt" https://raw.githubusercontent.com/AlonsoFernandezPedrosa/Air-Linux/master/Ascii-Fastfetch.txt
 
+ #Asistido por IA (solo este condicional)
  if grep fastfetch ~/.bashrc; then
     :
 
@@ -160,3 +165,13 @@ flatpak install flathub ai.lmstudio.lm-studio -y
 
  fi
 
+# Configuración usuarios
+
+echo -e "${VERDE}Personalización completada, se van a crear y restringir los usuarios"
+sleep 3
+
+sudo useradd -m user
+
+echo -e "${ROJO}Se va a crear la contraseña del nuevo usuario, le recomendamos utilizar lo mismo que en el nombre de usuario que es ${AZUL}user${NC}"
+sleep 1
+passwd user
