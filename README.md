@@ -125,4 +125,10 @@ Habrá 2 usuarios: "*admin*" (es admin y no root porque el nombre root puede dar
 
 - Arranque automático sin contraseña
 - Apps no necesarias bloqueadas (todas excepto instaladas, explorador de archivos...)
+
+
+
+## Cosas a arreglar
+[] Mover "Based on Fedora" en los fondos de pantalla porque la barra de tareas los tapa
+[] 
 v1.1.0
